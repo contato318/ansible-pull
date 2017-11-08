@@ -2,7 +2,9 @@
 - name: Install Mysql package
   yum: name={{ item }} state=present
   with_items:
-   - mysql-server
+   - mariadb
+   - mariadb-libs
+   - mariadb-devel
    - MySQL-python
    - libselinux-python
    - libsemanage-python
